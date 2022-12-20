@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home Buk</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Connection to Google Fonts API -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Source+Sans+Pro:wght@300;400;700&display=swap"
+    rel="stylesheet">
+  <!-- Grid styles -->
+  <link rel="stylesheet" media="all and (max-width: 767px)"
+    href="./css/grid-mobile.css">
+  <link rel="stylesheet" media="all and (min-width: 767px)"
+    href="./css/grid-tablet.css">
+  <link rel="stylesheet" media="all and (min-width: 1020px)"
+    href="./css/grid-desktop.css">
+  <!-- Meta description -->
+  <meta property="og:description"
+    content="Con nuestro software de gestión de recursos humanos centraliza todas tus tareas en una sola plataforma: Remuneraciones, Gestión de Personas y más.">
+  <meta property="og:title" content="Software de recursos humanos - Vive la experiencia Buk">
+  <meta name="twitter:description"
+    content="Con nuestro software de gestión de recursos humanos centraliza todas tus tareas en una sola plataforma: Remuneraciones, Gestión de Personas y más.">
+  <meta name="twitter:title" content="Software de recursos humanos - Vive la experiencia Buk">
+  <!-- Styles Home and Globals main -->
+  <link rel="stylesheet" href="./css/home.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="preload" href="./css/utilities-spaces.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="./css/utilities-spaces.css">
+  </noscript>
+
+  <style>
+    .buk-preheader .buk-preheader__right {
+      width: calc(100% - 80px);
+    }
+  
+    @media only screen and (min-width: 767px) {
+      .buk-preheader .buk-preheader__right {
+        width: auto;
+      }
+    }
+  
+    @media only screen and (min-width: 1100px) {
+      header .buk-menu__item:hover .buk-submenu {
+        padding: 1.5rem 1.2rem;
+      }
+    }
+  </style>
+
+</head>
+<body>
+  <section class="buk-preheader">
+    <div class="boxer-header buk-preheader__content">
+      <div class="buk-preheader__left">
+        <ul class="buk-preheader__links">
+          <li id="bukSite">
+            <a href="https://www.buk.mx/">Buk</a>
+          </li>
+          <li id="appSite">
+            <a href="https://www.buk.mx/app">App</a>
+          </li>
+        </ul>
+  
+      </div>
+      <div class="buk-preheader__right">
+  
+        <ul class="buk-preheader__links">
+          <li>
+            <a href="https://www.buk.mx/nosotros">Nosotros</a>
+          </li>
+          <li class="buk-preheader--hide">
+            <a href="https://buk.buk.mx/trabaja-con-nosotros" target="_blank">Trabaja con Nosotros</a>
+          </li>
+          <li id="countries">
+  
+            <button class="buk-countries open-countries" id="countries-options">
+              <img class="buk-flag__xs open-countries"
+                src="https://www.buk.mx/hubfs/2020/buk-starter/Banderas-50x550/Mexico.png" alt="Buk México">
+              <span class="buk-preheader--hide open-countries">México</span>
+              <span class="arrow-down open-countries">
+                <i class="arrow-down__left open-countries"></i>
+                <i class="arrow-down__right open-countries"></i>
+              </span>
+            </button>
+            <ul class="buk-countries__submenu">
+              <li class="buk-countries__container">
+                <ul>
+                  <li>
+                    <a href="https://www.buk.cl/" class="buk-countries__link">
+                      <img class="buk-flag__xs"
+                        src="https://www.buk.mx/hs-fs/hubfs/2020/buk-starter/Baneras-50x550/Chile.png?width=17&height=17&name=Chile.png"
+                        alt="Buk Chile" loading="lazy">
+                      <span>Chile</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.buk.co/" class="buk-countries__link">
+                      <img class="buk-flag__xs"
+                        src="https://www.buk.mx/hs-fs/hubfs/2020/buk-starter/banderas-03.png?width=26&height=26&name=banderas-03.png"
+                        alt="Buk Colombia" loading="lazy">
+                      <span>Colombia</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.buk.pe/" class="buk-countries__link">
+                      <img class="buk-flag__xs"
+                        src="https://www.buk.mx/hs-fs/hubfs/2020/buk-starter/banderas-02.png?width=17&height=17&name=banderas-02.png"
+                        alt="Buk Perú" loading="lazy">
+                      <span>Perú</span>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://www.buk.mx/" class="buk-countries__link">
+                      <img class="buk-flag__xs"
+                        src="https://www.buk.mx/hs-fs/hubfs/2020/buk-starter/banderas-04.png?width=17&height=17&name=banderas-04.png"
+                        alt="Buk Mexico" loading="lazy">
+                      <span>Mexico</span>
+                    </a>
+                  </li>
+                </ul>
+  
+              </li>
+            </ul>
+  
+          </li>
+        </ul>
+  
+      </div>
+    </div>
+  </section>
+
+  <header>
+    <!-- Begin partial -->
+    
+    <nav class="boxer-header buk-nav">
+      <div class="buk-logo">
+        <a href="https://www.buk.mx/">
+          <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/Header/buk-logo.svg" alt="buk-logo">
+        </a>
+      </div>
+    
+      <button class="buk-xs-menu" id="btn-mobile" aria-label="Abrir menu">
+        <div class="buk-xs-menu__hamburger"></div>
+      </button>
+    
+      <ul class="buk-menu">
+        <li class="buk-menu__item">
+          <button class="buk-menu__link buk-menu__link--dropdown">
+            Soluciones
+            <span class="arrow-down">
+              <i class="arrow-down__left"></i>
+              <i class="arrow-down__right"></i>
+            </span>
+          </button>
+    
+          <ul class="buk-submenu">
+            <li class="buk-pilar">
+              <div class="buk-pilar__content">
+                <div class="buk-pilar__icon">
+                  <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-gestiona.png" alt="Gestiona" loading="lazy">
+                </div>
+                <span class="buk-pilar__name">Gestiona</span>
+              </div>
+    
+              <ul class="buk-pilar__list">
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/gestion-de-personas">Gestión de Personas</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/software-de-nomina">Gestión de Nómina</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/firma-electronica">Firma Electrónica</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/control-de-asistencia">Control de Asistencia</a>
+                </li>
+              </ul>
+    
+            </li>
+            <li class="buk-pilar">
+              <div class="buk-pilar__content">
+                <div class="buk-pilar__icon">
+                  <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-atrae.png" alt="Atrae" loading="lazy">
+                </div>
+                <span class="buk-pilar__name">Atrae</span>
+              </div>
+    
+              <ul class="buk-pilar__list">
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/reclutamiento-seleccion">Reclutamiento y Selección</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/onboarding" rel=" noopener" target="_self">Onboarding</a>
+                </li>
+              </ul>
+    
+            </li>
+            <li class="buk-pilar">
+              <div class="buk-pilar__content">
+                <div class="buk-pilar__icon">
+                  <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-potencia.png" alt="Potencia" loading="lazy">
+                </div>
+                <span class="buk-pilar__name">Potencia</span>
+              </div>
+    
+              <ul class="buk-pilar__list">
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/evaluacion-del-desempeno">Evaluación del Desempeño</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/capacitaciones">Capacitaciones</a>
+                </li>
+              </ul>
+    
+            </li>
+            <li class="buk-pilar">
+              <div class="buk-pilar__content">
+                <div class="buk-pilar__icon">
+                  <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-compromete.png" alt="Compromete" loading="lazy">
+                </div>
+                <span class="buk-pilar__name">Fortalece</span>
+              </div>
+    
+              <ul class="buk-pilar__list">
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/beneficios">Beneficios</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/comunicacion-y-reconocimiento-laboral">Comunicación y
+                    Reconocimiento Laboral</a>
+                </li>
+                <li class="buk-pilar__label">
+                  <a href="https://www.buk.mx/soluciones/encuestas">Encuestas</a>
+                </li>
+              </ul>
+    
+            </li>
+            <li class="cta-solutions txt-center">
+              <a href="https://www.buk.mx/soluciones" class="btn btn--4 v-mobile">Ver todas las soluciones</a>
+              <a href="https://www.buk.mx/soluciones" class="cta-solutions__link v-desktop">Ver todas las soluciones <img
+                  src="https://www.buk.mx/hubfs/2022/Icons/flechas.webp" alt="Ir a todas las soluciones"></a>
+            </li>
+          </ul>
+          <!-- Fin Submenu -->
+        </li>
+        <li class="buk-menu__item">
+          <a href="https://www.buk.mx/precios" class="buk-menu__link">Precios</a>
+        </li>
+        <li class="buk-menu__item">
+          <button class="buk-menu__link buk-menu__link--dropdown">
+            Nuestra Familia
+            <span class="arrow-down">
+              <i class="arrow-down__left"></i>
+              <i class="arrow-down__right"></i>
+            </span>
+          </button>
+          <ul class="buk-submenu buk-submenu--family">
+            <li class="buk-family">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/Header/clientes-07.svg" alt="Clientes"
+                  loading="lazy">
+              </figure>
+              <a href="https://www.buk.mx/clientes">Clientes</a>
+            </li>
+            <li class="buk-family">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/Header/partners-08.svg" alt="Partners"
+                  loading="lazy">
+              </figure>
+              <a href="https://www.buk.mx/partners">Partners</a>
+            </li>
+            <li class="buk-family">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/Header/servicios-09.svg" alt="Servicios"
+                  loading="lazy">
+              </figure>
+              <a href="https://www.buk.mx/servicios">Servicios</a>
+            </li>
+          </ul>
+    
+        </li>
+        <li class="buk-menu__item">
+          <button class="buk-menu__link buk-menu__link--dropdown">
+            Recursos
+            <span class="arrow-down">
+              <i class="arrow-down__left"></i>
+              <i class="arrow-down__right"></i>
+            </span>
+          </button>
+          <ul class="buk-submenu buk-submenu--resources">
+            <li class="buk-resources">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/Chile/recursos-2022/ebooks-04.webp" alt="Ebooks, Guías y más"
+                  loading="lazy">
+              </figure>
+              <a href="/recursos/ebooks-y-guias">Ebooks, Guías y Más</a>
+            </li>
+            <li class="buk-resources">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/Chile/recursos-2022/podcast-05.webp" alt="Podcast" loading="lazy">
+              </figure>
+              <a href="/recursos/podcast">Podcast</a>
+            </li>
+            
+            <!-- <li class="buk-resources">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/Chile/recursos-2022/comunidad-06.webp" alt="Guías" loading="lazy">
+              </figure>
+              <a href="https://www.comunidad-buk.com/" target="_blank">Comunidad Buk</a>
+            </li> -->
+    
+          </ul>
+        </li>
+        <li class="buk-menu__item">
+          <a href="https://www.buk.mx/blog" class="buk-menu__link">Blog</a>
+        </li>
+        
+        <li class="buk-cta">
+          <div class="buk-cta__wrap-button">
+            <!--HubSpot Call-to-Action Code -->
+            <span class="hs-cta-wrapper" id="hs-cta-wrapper-b417532b-2935-4ec2-9233-5e52530da050">
+              <span class="hs-cta-node hs-cta-b417532b-2935-4ec2-9233-5e52530da050"
+                id="hs-cta-b417532b-2935-4ec2-9233-5e52530da050">
+                <!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]-->
+                <a href="https://cta-redirect.hubspot.com/cta/redirect/3790458/b417532b-2935-4ec2-9233-5e52530da050">
+                  <span class="btn btn--1">Empieza ahora</span>
+                </a>
+              </span>
+              <script charset="utf-8" src="https://js.hscta.net/cta/current.js"></script>
+              <script
+                type="text/javascript"> hbspt.cta.load(3790458, 'b417532b-2935-4ec2-9233-5e52530da050', { "useNewLoader": "true", "region": "na1" }); </script>
+            </span>
+            <!-- end HubSpot Call-to-Action Code -->
+          </div>
+          <div class="buk-cta__wrap-button v-mobile">
+            <a href="https://www.buk.mx/app" class="btn btn--3">Descarga la App</a>
+          </div>
+        </li>
+    
+      </ul>
+      <!-- Fin Menú -->
+    
+    </nav>
+    
+    <!-- End partial -->
+    
+    
+    
+  </header>
+
+  <main>
+    <section class="banner-static buk-pt-6 buk-pb-4 buk-pt-md-8 buk-pb-md-0">
+      <div class="boxer">
+        <div class="buk-grid ai-center">
+          <div class="buk-col buk-col-md-6 buk-col-lg-4 buk-col-st-lg-2">
+            <h1>Crea un lugar de trabajo más feliz</h1>
+            <p class="buk-my-3">Con nuestro software de recursos humanos centraliza todas tus tareas en una sola
+              plataforma:<strong> Pago de Nómina, Gestión de Personas, Gestión de Talento y más.</strong></p>
+    
+            <span id="hs_cos_wrapper_module_166638832573720_"
+              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta"
+              data-hs-cos-general-type="widget" data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span
+                class="hs-cta-wrapper" id="hs-cta-wrapper-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><span
+                  class="hs-cta-node hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"
+                  id="hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
+                    href="https://cta-redirect.hubspot.com/cta/redirect/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><img
+                      class="hs-cta-img" id="hs-cta-img-e1f015d1-dba3-4227-b2ec-5fa31cb8b202" style="border-width:0px;"
+                      src="https://no-cache.hubspot.com/cta/default/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202.png"
+                      alt="Empieza ahora"></a></span>
+                <script charset="utf-8" src="/hs/cta/cta/current.js"></script>
+                <script
+                  type="text/javascript"> hbspt.cta._relativeUrls = true; hbspt.cta.load(3790458, 'e1f015d1-dba3-4227-b2ec-5fa31cb8b202', { "useNewLoader": "true", "region": "na1" }); </script>
+              </span><!-- end HubSpot Call-to-Action Code --></span>
+          </div>
+          <div class="buk-col buk-col-md-6 buk-col-lg-5 ds-flex jc-center buk-col-st-lg-7">
+            <figure class="ds-flex jc-center">
+              <img src="https://www.buk.mx/hubfs/Sitio%20Web/Home/imagen-home-mx.webp"
+                alt="El software de recursos humanos de Buk te permite centralizar todas tus tareas en una sola plataforma">
+            </figure>
+          </div>
+        </div>
+      </div>
+      <svg class="v-desktop curva " xmlns="http://www.w3.org/2000/svg" width="1943.421" height="89.711"
+        viewbox="0 0 1943.421 89.711">
+        <path d="M-2982-762.965s327.01-96.63,961.589-37.954,981.833-9.477,981.833-9.477v80.281H-2982Z"
+          transform="translate(2982 819.826)" fill="#fff" />
+      </svg>
+    </section>
+
+    <section class="boxer buk-py-6 buk-py-lg-5">
+      <div class="pilares-box__text buk-mb-4">
+        <h2 class="buk-my-2">Un Software de Recursos Humanos</h2>
+        <h3>Para atender todas las necesidades de tus colaboradores. Desde el pago de nómina hasta su desarrollo
+          profesional.</h3>
+      </div>
+      <div class="box_pilares">
+        <div class="buk-grid">
+    
+          <article class="buk-col-lg-3 buk-col-md-3 buk-col buk-grid txt-md-center">
+            <figure class="buk-col-1 buk-col-md-12 buk-col-lg-12 pilares-info__img">
+              <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-gestiona.webp" alt="icono-gestiona">
+            </figure>
+            <div class="buk-col-3 buk-col-md-12 buk-col-lg-12 ai-self-center">
+              <h4 class="buk-pb-1 buk-pb-md-2">Gestiona</h4>
+              <p>Ahorra tiempo en las tareas administrativas</p>
+            </div>
+          </article>
+    
+          <article class="buk-col-lg-3 buk-col-md-3 buk-col buk-grid txt-md-center">
+            <figure class="buk-col-1 buk-col-md-12 buk-col-lg-12 pilares-info__img">
+              <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-atrae.webp" alt="icono-atrae">
+            </figure>
+            <div class="buk-col-3 buk-col-md-12 buk-col-lg-12 ai-self-center">
+              <h4 class="buk-pb-1 buk-pb-md-2">Atrae</h4>
+              <p>Contrata el mejor talento para tu empresa</p>
+            </div>
+          </article>
+    
+          <article class="buk-col-lg-3 buk-col-md-3 buk-col buk-grid txt-md-center">
+            <figure class="buk-col-1 buk-col-md-12 buk-col-lg-12 pilares-info__img">
+              <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-potencia.webp" alt="icono-potencia">
+            </figure>
+            <div class="buk-col-3 buk-col-md-12 buk-col-lg-12 ai-self-center">
+              <h4 class="buk-pb-1 buk-pb-md-2">Potencia</h4>
+              <p>Desarrolla el potencial de tus colaboradores</p>
+            </div>
+          </article>
+    
+          <article class="buk-col-lg-3 buk-col-md-3 buk-col buk-grid txt-md-center">
+            <figure class="buk-col-1 buk-col-md-12 buk-col-lg-12 pilares-info__img">
+              <img src="https://www.buk.mx/hubfs/2022/BUK/Pilares/icono-compromete.webp" alt="icono-fortalece">
+            </figure>
+            <div class="buk-col-3 buk-col-md-12 buk-col-lg-12 ai-self-center">
+              <h4 class="buk-pb-1 buk-pb-md-2">Fortalece</h4>
+              <p>La cultura de tu organización</p>
+            </div>
+          </article>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="enterprises-clients mexico buk-py-5 buk-py-lg-4">
+      <div class="boxer">
+    
+        <div class="buk-grid">
+          <div class="buk-col txt-center">
+            <h3 class="font-color-primary">En Buk nos importa tu felicidad y la de tus colaboradores</h3>
+            <h3 class="font-color-primary buk-mt-1"><span class="outstanding">+ de 4.000 empresas</span> ya tienen un lugar
+              de trabajo más feliz con Buk</h3>
+          </div>
+    
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 ">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+    
+    
+                <img src="https://www.buk.mx/hubfs/logo-mx-BEST-WESTERN-1.webp" alt="logo-mx-BEST-WESTERN-1" loading="lazy"
+                  width="132" height="77" style="max-width: 100%; height: auto;">
+    
+              </figure>
+            </div>
+          </div>
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 ">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+    
+    
+                <img src="https://www.buk.mx/hubfs/logo-mx-CORNERSHOP-1.webp" alt="logo-mx-CORNERSHOP-1" loading="lazy"
+                  width="115" height="87" style="max-width: 100%; height: auto;">
+    
+              </figure>
+            </div>
+          </div>
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 ">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/logo-mx-PATAGONIA-1.webp" alt="logo-mx-PATAGONIA-1" loading="lazy"
+                  width="160" height="30" style="max-width: 100%; height: auto;">
+              </figure>
+            </div>
+          </div>
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 ">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/logo-mx-LAIKA-1.webp" alt="logo-mx-LAIKA-1" loading="lazy" width="160"
+                  height="48" style="max-width: 100%; height: auto;">
+              </figure>
+            </div>
+          </div>
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 buk-col-st-md-4">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/logo-mx-HOUM-1.webp" alt="logo-mx-HOUM-1" loading="lazy" width="141"
+                  height="66" style="max-width: 100%; height: auto;">
+              </figure>
+            </div>
+          </div>
+    
+          <div class="buk-col-2 buk-col-md-3 buk-col-lg-2  buk-mt-md-2 buk-mt-lg-3 ">
+            <div class="shadow-box buk-p-1 ds-flex jc-center hi-100 ai-center">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/logo-mx-MUDANGO-1.webp" alt="logo-mx-MUDANGO-1" loading="lazy"
+                  width="137" height="73" style="max-width: 100%; height: auto;">
+              </figure>
+            </div>
+          </div>
+
+          <div class="buk-col txt-center buk-mt-3 buk-mt-md-3">
+            <span id="hs_cos_wrapper_module_166638835331621_"
+              class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta"
+              data-hs-cos-general-type="widget" data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span
+                class="hs-cta-wrapper" id="hs-cta-wrapper-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><span
+                  class="hs-cta-node hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"
+                  id="hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
+                    href="https://cta-redirect.hubspot.com/cta/redirect/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><img
+                      class="hs-cta-img" id="hs-cta-img-e1f015d1-dba3-4227-b2ec-5fa31cb8b202" style="border-width:0px;"
+                      src="https://no-cache.hubspot.com/cta/default/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202.png"
+                      alt="Empieza ahora"></a></span>
+                <script charset="utf-8" src="/hs/cta/cta/current.js"></script>
+                <script
+                  type="text/javascript"> hbspt.cta._relativeUrls = true; hbspt.cta.load(3790458, 'e1f015d1-dba3-4227-b2ec-5fa31cb8b202', { "useNewLoader": "true", "region": "na1" }); </script>
+              </span><!-- end HubSpot Call-to-Action Code --></span>
+          </div>
+    
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="buk-py-6 buk-py-lg-5 " id="video-popup">
+      <div class="boxer">
+    
+        <div class="ds-flex jc-center">
+          <a class="showUp-video" href="https://www.youtube.com/watch?v=rpFaDZyRF-c" data-youtube-id="rpFaDZyRF-c">
+            <img src="https://www.buk.mx/hubfs/portada-video-generico-buk%20(1).webp" loading="lazy"
+              alt="portada-video-generico-buk (1)" width="100%">
+          </a>
+        </div>
+    
+      </div>
+    </section>
+
+    <section class="buk-pt-3 buk-pb-6 buk-pt-lg-2 buk-pb-lg-4 solutions">
+      <div class="boxer">
+        <h2 class="txt-center buk-mb-4 buk-mb-md-5">Conoce todas nuestras soluciones</h2>
+    
+        <div class="shadow-box-fluid buk-pt-5 buk-px-2 buk-pb-md-4 buk-px-md-4 buk-px-lg-5">
+          <div class="tab-solutions__buttons ds-flex ai-center jc-start none-wrap buk-pb-3 gap-lg--24">
+    
+            <button class="btn btn--4" data-solution="atrae">Atrae</button>
+    
+            <button class="btn btn--4" data-solution="gestiona">Gestiona</button>
+    
+            <button class="btn btn--4" data-solution="potencia">Potencia</button>
+    
+            <button class="btn btn--4" data-solution="fortalece">Fortalece</button>
+    
+          </div>
+          <div class="tab-solutions__body buk-mt-2">
+    
+            <div class="tab-solutions__content" id="atrae" data-solution-content>
+              <div class="buk-grid">
+                <div class="buk-col buk-col-md-6 buk-col-ed-md-13 buk-col-lg-5 buk-col-ed-lg-12">
+                  <h3>Atrae</h3>
+                  <p>el mejor talento para tu organización con las más eficientes herramientas de reclutamiento, selección y
+                    onboarding, para que la experiencia de tus postulantes, reclutadores y colaboradores sea excelente.</p>
+                  <ul class="buk-mt-2 general-list">
+    
+                    <li><a href="https://www.buk.mx/soluciones/reclutamiento-seleccion">Reclutamiento y Selección</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/onboarding">Onboarding</a></li>
+    
+                  </ul>
+                </div>
+                <div
+                  class="buk-col buk-col-md-6 buk-col-st-md-1 buk-row-st-md-1 buk-col-lg-5  buk-col-st-lg-1 buk-row-st-lg-1 ai-self-md-center">
+                  <figure class="txt-center">
+    
+    
+                    <img src="https://www.buk.mx/hubfs/pilar-web-atrae%20(1).webp" alt="pilar-web-atrae (1)" loading="lazy">
+    
+    
+                  </figure>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab-solutions__content" id="gestiona" data-solution-content>
+              <div class="buk-grid">
+                <div class="buk-col buk-col-md-6 buk-col-ed-md-13 buk-col-lg-5 buk-col-ed-lg-12">
+                  <h3>Gestiona</h3>
+                  <p>tu activo más valioso, las personas, de manera integral y en una sola plataforma. Visualiza organigrama
+                    y el detalle de tus colaboradores, realiza acciones como pago de remuneraciones, control de asistencia y
+                    firma de documentos entre otros.</p>
+                  <ul class="buk-mt-2 general-list">
+    
+                    <li><a href="https://www.buk.mx/soluciones/gestion-de-personas">Gestión de Personas</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/software-de-nomina">Gestión de Nómina</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/firma-electronica">Firmas Electrónicas</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/control-de-asistencia">Asistencia</a></li>
+    
+                  </ul>
+                </div>
+                <div
+                  class="buk-col buk-col-md-6 buk-col-st-md-1 buk-row-st-md-1 buk-col-lg-5  buk-col-st-lg-1 buk-row-st-lg-1 ai-self-md-center">
+                  <figure class="txt-center">
+    
+    
+                    <img src="https://www.buk.mx/hubfs/2022/BUK/Webp/Home/pilar-web-gestiona%20(1).webp"
+                      alt="pilar-web-gestiona (1)" loading="lazy">
+    
+    
+                  </figure>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab-solutions__content" id="potencia" data-solution-content>
+              <div class="buk-grid">
+                <div class="buk-col buk-col-md-6 buk-col-ed-md-13 buk-col-lg-5 buk-col-ed-lg-12">
+                  <h3>Potencia</h3>
+                  <p>las habilidades de tu equipo entregando herramientas concretas que permitan el crecimiento, aprendizaje
+                    y desarrollo profesional de tus colaboradores.</p>
+                  <ul class="buk-mt-2 general-list">
+    
+                    <li><a href="https://www.buk.mx/soluciones/evaluacion-del-desempeno">Desempeño</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/capacitaciones">Capacitaciones</a></li>
+    
+                  </ul>
+                </div>
+                <div
+                  class="buk-col buk-col-md-6 buk-col-st-md-1 buk-row-st-md-1 buk-col-lg-5  buk-col-st-lg-1 buk-row-st-lg-1 ai-self-md-center">
+                  <figure class="txt-center">
+    
+    
+                    <img src="https://www.buk.mx/hubfs/2022/BUK/Webp/Home/pilar-web-potencia%20(1).webp"
+                      alt="pilar-web-potencia (1)" loading="lazy">
+    
+    
+                  </figure>
+                </div>
+              </div>
+            </div>
+    
+            <div class="tab-solutions__content" id="fortalece" data-solution-content>
+              <div class="buk-grid">
+                <div class="buk-col buk-col-md-6 buk-col-ed-md-13 buk-col-lg-5 buk-col-ed-lg-12">
+                  <h3>Fortalece</h3>
+                  <p><span>a tus colaboradores, promoviendo la comunicación y las relaciones entre los equipos, escúchalos y
+                      fortalece tu cultura organizacional.</span></p>
+                  <ul class="buk-mt-2 general-list">
+    
+                    <li><a href="https://www.buk.mx/soluciones/beneficios">Beneficios</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/comunicacion-y-reconocimiento-laboral">Comunicación y
+                        Reconocimiento</a></li>
+    
+                    <li><a href="https://www.buk.mx/soluciones/encuestas">Encuestas</a></li>
+    
+                  </ul>
+                </div>
+                <div
+                  class="buk-col buk-col-md-6 buk-col-st-md-1 buk-row-st-md-1 buk-col-lg-5  buk-col-st-lg-1 buk-row-st-lg-1 ai-self-md-center">
+                  <figure class="txt-center">
+    
+    
+                    <img src="https://www.buk.mx/hubfs/pilar-web-compromete-_2_.webp" alt="pilar-web-compromete-_2_"
+                      loading="lazy">
+    
+    
+                  </figure>
+                </div>
+              </div>
+            </div>
+    
+          </div>
+        </div>
+    
+    
+        <div class="buk-mt-6 buk-mt-lg-4 txt-center">
+          <span id="hs_cos_wrapper_module_166633503934014_"
+            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta" data-hs-cos-general-type="widget"
+            data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper"
+              id="hs-cta-wrapper-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><span
+                class="hs-cta-node hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"
+                id="hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
+                  href="https://cta-redirect.hubspot.com/cta/redirect/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><img
+                    class="hs-cta-img" id="hs-cta-img-e1f015d1-dba3-4227-b2ec-5fa31cb8b202" style="border-width:0px;"
+                    src="https://no-cache.hubspot.com/cta/default/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202.png"
+                    alt="Empieza ahora"></a></span>
+              <script charset="utf-8" src="/hs/cta/cta/current.js"></script>
+              <script
+                type="text/javascript"> hbspt.cta._relativeUrls = true; hbspt.cta.load(3790458, 'e1f015d1-dba3-4227-b2ec-5fa31cb8b202', { "useNewLoader": "true", "region": "na1" }); </script>
+            </span><!-- end HubSpot Call-to-Action Code --></span>
+        </div>
+    
+    
+      </div>
+    </section>
+
+    <section class="bg-ebook__cta buk-pt-6 buk-pb-5 buk-py-lg-5">
+      <div class="boxer buk-grid ai-center">
+        <div class="buk-col-lg-3 buk-col-md-3 buk-col buk-col-st-lg-4 buk-col-st-md-4 v-tablet">
+          <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/mx/portada-ebook-home-mx.webp"
+            alt="portada-ebook-home-mx" loading="lazy" width="80%">
+        </div>
+    
+        <div class="buk-col-lg-4 buk-col-md-4 buk-col txt-center txt-lg-left txt-md-left box-ebook__text">
+          <h2>Ebook Gratuito</h2>
+          <h4 class="buk-mt-2">Software Integral de RRHH</h4>
+          <p class="box-ebook__parrafo">Una práctica guía para una mejor comprensión del impacto de la tecnología en la
+            Administración de Recursos Humanos.</p>
+          <a class="btn btn--2 buk-mt-3" href="https://info.buk.mx/ebook-software-integral-de-recursos-humanos">Descarga tu
+            Ebook</a>
+        </div>
+    
+        <div class="buk-col v-mobile txt-center">
+          <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/mx/portada-ebook-home-mx.webp"
+            alt="portada-ebook-home-mx" loading="lazy" width="225">
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonios-estatico buk-py-6 buk-py-lg-3">
+      <div class="boxer">
+        <h2 class="txt-center buk-pb-6">Testimonios</h2>
+        <div class="container ds-flex jc-center">
+    
+          <div class="container__item txt-center shadow-box-fluid">
+            <img src="https://www.buk.mx/hubfs/2022/BUK/Landing%20por%20Industrias/comillas.svg"
+              alt="icono comillas para testimonios">
+            <div class="container__item--content">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2020/empresas/salcobrand-e1529600469252.png"
+                  alt="salcobrand-e1529600469252" loading="lazy">
+              </figure>
+              <p class="buk-pt-5">"Buk es un gran aporte, nos facilita muchas actividades y nos ha permitido disminuir los
+                tiempos en los procesos"</p>
+              <div class="item__content--name buk-pt-6">
+                <h3>Nidia Altamarino</h3>
+                <p>Analista de Compensaciones en Salcobrand</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container__item txt-center shadow-box-fluid">
+            <img src="https://www.buk.mx/hubfs/2022/BUK/Landing%20por%20Industrias/comillas.svg"
+              alt="icono comillas para testimonios">
+            <div class="container__item--content">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/wom.png" alt="wom" loading="lazy">
+              </figure>
+              <p class="buk-pt-5">“Nos volvemos autosuficientes y eso nos encanta”.</p>
+              <div class="item__content--name buk-pt-6">
+                <h3>Mauricio Godoy</h3>
+                <p>Especialista de Compensaciones de WOM</p>
+              </div>
+            </div>
+          </div>
+    
+          <div class="container__item txt-center shadow-box-fluid">
+            <img src="https://www.buk.mx/hubfs/2022/BUK/Landing%20por%20Industrias/comillas.svg"
+              alt="icono comillas para testimonios">
+            <div class="container__item--content">
+              <figure>
+                <img src="https://www.buk.mx/hubfs/2022/BUK/Devs/Empresas/fintual-logo-devs.png" alt="fintual-logo-devs"
+                  loading="lazy">
+              </figure>
+              <p class="buk-pt-5">"Buk fue el software de gestión de personas que mejor se adaptó a la horizontalidad de
+                Fintual".</p>
+              <div class="item__content--name buk-pt-6">
+                <h3>Sebastián Lisboa</h3>
+                <p>Payroll de Fintual</p>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </section>
+
+    <section class="buk-py-6 buk-pt-lg-3 buk-pb-lg-4">
+      <div class="boxer">
+        <h2 class="txt-center buk-my-2">¿Listo para vivir la Experiencia Buk?</h2>
+        <div class="ds-lg-flex jc-lg-center ai-lg-center v-desktop">
+          <img src="https://www.buk.mx/hubfs/Imported%20sitepage%20images/experiencia-buk.svg" alt="experiencia-buk"
+            loading="lazy" width="750">
+        </div>
+        <div class="buk-grid">
+          <div class="buk-col-1 buk-col-md-2 buk-col-st-md-2 v-mobile-xl">
+            <img src="https://www.buk.mx/hubfs/2022/BUK/Home%20nuevo/pre-form.svg"
+              alt="imagen que muestra paso a paso de la experiencia Buk" loading="lazy">
+          </div>
+    
+          <div class="buk-col-3 buk-col-md-8 buk-col-lg-12">
+            <div class="buk-grid">
+              <div
+                class="buk-col-lg-2 buk-col-st-lg-3 buk-col-md-12 buk-col-4 txt-lg-center txt-left buk-mt-1 buk-mt-md-1 buk-mt-lg-0">
+                <h4>Agenda <br> una llamada</h4>
+                <p class="experiencia_parrafo">Un consultor experto se encargará de conocer tus necesidades y presentarte la
+                  solución más adecuada para ti.</p>
+              </div>
+    
+              <div
+                class="buk-col-lg-2 buk-col-st-lg-6 buk-col-md-12 buk-col-4 txt-lg-center txt-left buk-mt-2 buk-mt-md-10 buk-mt-lg-0">
+                <h4>Súmate a la experiencia</h4>
+                <p class="experiencia_parrafo">Un jefe de proyecto te guiará en todo el proceso de implementación,
+                  capacitación y manejo de software.</p>
+              </div>
+    
+              <div
+                class="buk-col-lg-2 buk-col-st-lg-9 buk-col-md-12 buk-col-4 txt-lg-center txt-left buk-mt-4 buk-mt-md-10 buk-mt-lg-0">
+                <h4>Crea un lugar de trabajo más feliz</h4>
+                <p class="experiencia_parrafo">Siempre podrás contar con nuestra ayuda para hacer más felices a tus
+                  colaboradores.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+    
+    
+        <div class="buk-col txt-center buk-mt-5 buk-mb-7">
+    
+          <span id="hs_cos_wrapper_module_166257854467215_"
+            class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_cta" data-hs-cos-general-type="widget"
+            data-hs-cos-type="cta"><!--HubSpot Call-to-Action Code --><span class="hs-cta-wrapper"
+              id="hs-cta-wrapper-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><span
+                class="hs-cta-node hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"
+                id="hs-cta-e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a
+                  href="https://cta-redirect.hubspot.com/cta/redirect/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202"><img
+                    class="hs-cta-img" id="hs-cta-img-e1f015d1-dba3-4227-b2ec-5fa31cb8b202" style="border-width:0px;"
+                    src="https://no-cache.hubspot.com/cta/default/3790458/e1f015d1-dba3-4227-b2ec-5fa31cb8b202.png"
+                    alt="Empieza ahora"></a></span>
+              <script charset="utf-8" src="/hs/cta/cta/current.js"></script>
+              <script
+                type="text/javascript"> hbspt.cta._relativeUrls = true; hbspt.cta.load(3790458, 'e1f015d1-dba3-4227-b2ec-5fa31cb8b202', { "useNewLoader": "true", "region": "na1" }); </script>
+            </span><!-- end HubSpot Call-to-Action Code --></span>
+        </div>
+    
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container-top full">
+    
+      <div class="boxer">
+        <div class="wrapper wrapper-flex">
+    
+          <div class="wrap wrap-one">
+            <h3>Menú</h3>
+            <ul>
+              <li><a href="https://www.buk.mx/servicios" target="_self">Servicios</a></li>
+              <li><a href="https://www.buk.mx/precios" target="_self">Precios</a></li>
+              <li><a href="https://www.buk.mx/nosotros" target="_self">Nosotros</a></li>
+              <li><a href="https://www.buk.mx/partners" target="_self">Partners</a></li>
+              <li><a href="https://www.buk.mx/blog" target="_self">Blog</a></li>
+              <li><a href="https://www.buk.mx/recursos" target="_self">Recursos</a></li>
+              <li><a href="https://www.buk.mx/privacidad">Privacidad</a></li>
+              <li><a href="https://www.buk.mx/proteccion-de-datos">Protección de Datos</a></li>
+              <li><a href="https://buk.buk.mx/trabaja-con-nosotros" target="_blank">Trabaja con Nosotros</a></li>
+            </ul>
+          </div>
+    
+          <div class="wrap wrap-two">
+            <h3>Soluciones</h3>
+            <div class="block block-flex">
+              <div class="group group-one">
+                <h3>Atrae</h3>
+                <ul style="margin-top:0;">
+                  <li><a href="https://www.buk.mx/soluciones/reclutamiento-seleccion" rel=" noopener"
+                      target="_self">Reclutamiento y Selección</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/onboarding" rel=" noopener" target="_self">Onbording</a></li>
+                </ul>
+    
+                <h3>Gestiona</h3>
+                <ul style="margin-top:0;">
+                  <li><a href="https://www.buk.mx/soluciones/gestion-de-personas" title="Gestión de personas (HCM)"
+                      rel=" noopener" target="_self">Gestión de Personas</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/software-de-nomina" title="Gestión de Nómina" rel="noopener"
+                      target="_self">Gestión de Nómina</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/firma-electronica" title="Firma electrónica" rel=" noopener"
+                      target="_self">Firma Electrónica</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/control-de-asistencia" title="Control de asistencia"
+                      rel=" noopener" target="_self">Control de Asistencia</a></li>
+                </ul>
+    
+              </div>
+              <div class="group group-two">
+                <h3>Potencia</h3>
+                <ul style="margin-top:0;">
+                  <li><a href="https://www.buk.mx/soluciones/evaluacion-del-desempeno" rel=" noopener"
+                      target="_self">Evaluación del Desempeño</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/capacitaciones" rel=" noopener"
+                      target="_self">Capacitaciones</a></li>
+                </ul>
+                <h3>Compromete</h3>
+                <ul style="margin-top:0;">
+                  <li><a href="https://www.buk.mx/soluciones/beneficios" rel=" noopener" target="_self">Beneficios</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/comunicacion-y-reconocimiento-laboral" rel=" noopener"
+                      target="_self">Comunicación y Reconocimiento <br> Laboral</a></li>
+                  <li><a href="https://www.buk.mx/soluciones/encuestas" rel=" noopener" target="_self">Encuestas</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+    
+          <div class="wrap wrap-three">
+            <h3>Contacto</h3>
+    
+            <h4>Ventas:</h4>
+            <ul>
+              <li><a href="mailto:sofia@buk.mx">sofia@buk.mx</a></li>
+              <li><a href="tel:+525546319963" rel="noopener">+52 55 4631 9963</a></li>
+            </ul>
+    
+            <ul>
+              <li><a href="https://goo.gl/maps/dHFd8s2YBqs4c6m59" target="_blank">Calle Montes Urales 424, Lomas de
+                  Chapultepec, Miguel Hidalgo, 11000 Ciudad de México, CDMX</a></li>
+            </ul>
+    
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="container-bottom full">
+      <div class="boxer">
+        <div class="wrapper flex">
+    
+          <div class="wrap">
+            <div class="logo-footer">
+              <div class="imagen-logo">
+                <img src="https://www.buk.mx/hubfs/Buk/footerLogo.png" style="max-width:142px;" loading="lazy"
+                  alt="BUK CREA UN LUGAR DE TRABAJO MÁS FELIZ" width="142px" height="55">
+              </div>
+              <h4>Crea un lugar de trabajo <span>más feliz :)</span></h4>
+            </div>
+          </div>
+    
+          <div class="wrap wrap-flex">
+            <div class="copy-right "><span>© Buk</span> <span id="copyright-year"></span></div>
+            <div class="social-link">
+              <ul>
+                <li><a class="facebook" href="https://www.facebook.com/bukhr.mx" title="Síguenos en Facebook"
+                    target="_blank" rel="nofollow"><img
+                      src="https://www.buk.cl/hubfs/2022/BUK/Home%20nuevo/rrss%20footer/Iconos%20web%20soluciones%2025%20jun-68.svg"
+                      alt="buk facebook" style="width:30px;height:30px;" loading="lazy"></a></li>
+                <li><a class="instagram" href="https://www.instagram.com/buk_mx/" title="Síguenos en Instagram"
+                    target="_blank" rel="nofollow"><img
+                      src="https://www.buk.cl/hubfs/2022/BUK/Home%20nuevo/rrss%20footer/Iconos-web-instagram.svg"
+                      alt="buk instagram" style="width:30px;height:30px;" loading="lazy"></a></li>
+                <li><a class="linkedin" href="https://www.linkedin.com/company/bukhr/" title="Síguenos en LinkedIn"
+                    target="_blank" rel="nofollow"> <img
+                      src="https://www.buk.cl/hubfs/2022/BUK/Home%20nuevo/rrss%20footer/Iconos-web-linkeding.svg"
+                      alt="buk linkeding" style="width:30px;height:30px;" loading="lazy"> </a></li>
+                <li><a class="youtube" href="https://www.youtube.com/channel/UC381JL3t0TwII2VfwwJHu8w/featured"
+                    target="_blank" rel="nofollow" title="Síguenos en Youtube"><img
+                      src="https://www.buk.cl/hubfs/2022/BUK/Home%20nuevo/rrss%20footer/Iconos%20web%20soluciones%2025%20jun-64.svg"
+                      alt="buk youtube" style="width:30px;height:30px;" loading="lazy"> </a></li>
+              </ul>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="./js/modal-video.js" defer></script>
+  <script src="./js/tab-soluciones.js" defer></script>
+  <script src="./js/index.js" defer></script>
+</body>
+</html>

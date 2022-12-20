@@ -1,0 +1,351 @@
+/* ---- Banner Estatico ----  */
+.banner-static {
+  background: var(--gradient-1);
+}
+
+@media screen and (min-width: 767px) {
+  .banner-static {
+    height: auto;
+  }
+
+  .banner-static svg.curva {
+    width: 100%;
+    height: auto;
+  }
+
+  .banner-static svg.curva.rotate180 {
+    transform: rotateY(180deg);
+  }
+}
+
+/* ---- Video Modal ---- */
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+#video-popup a {
+  transition: 0.3s;
+}
+
+#video-popup a:hover {
+  opacity: 0.8;
+}
+
+.video-modal,
+.video-modal .overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10000;
+  ;
+}
+
+.video-modal {
+  overflow: hidden;
+  position: fixed;
+  opacity: 0.0;
+  -webkit-transform: translate(500%, 0%);
+  transform: translate(500%, 0%);
+  -webkit-transition: -webkit-transform 0s linear 0s;
+  transition: transform 0s linear 0s;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.video-modal .overlay {
+  z-index: 0;
+  background: rgb(0 0 0 / 80%);
+  opacity: 0.0;
+  -webkit-transition: opacity 0.2s ease-out 0.05s;
+  transition: opacity 0.2s ease-out 0.05s;
+}
+
+.video-modal-content {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  margin: 0 auto;
+  overflow-y: visible;
+  background: #000;
+  width: calc(100% - 3em);
+  height: 0;
+  padding-top: calc((100% - 1em) * 0.5625);
+}
+
+.noscroll {
+  overflow: hidden;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .video-modal-content {
+    width: 0;
+    height: calc(100vh - 10em);
+    padding-top: 0;
+    padding-left: calc((100vh - 10em) * 1.7778);
+  }
+}
+
+/* Mobile Layout Tweaks - side margins reduced */
+@media (min-width: 767px) {
+  .video-modal-content {
+    width: 0;
+    height: calc(100vh - 10em);
+    padding-top: 0;
+    padding-left: calc((100vh - 10em) * 1.7778);
+  }
+}
+
+/* modal close button */
+.close-video-modal {
+  border: 2px solid;
+  border-radius: 14px;
+  color: #fff;
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  padding: 6px 8px;
+  position: absolute;
+  right: 20px;
+  text-decoration: none;
+  top: -40px;
+}
+
+iframe#youtube {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  background: #000;
+  box-shadow: 0px 2px 16px rgba(0, 0, 0, 0.5);
+}
+
+.show-video-modal .video-modal {
+  opacity: 1.0;
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+}
+
+.show-video-modal .video-modal .overlay {
+  opacity: 1.0;
+}
+
+.show-video-modal .video-modal-content {
+  transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+}
+
+/* ---- Estilos Home ---- */
+
+.pilares-box__text {
+  width: 90%;
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+
+.pilares-box__text h3 {
+  font-weight: 400;
+  font-size: 20px;
+}
+
+.box_pilares {
+  padding: 32px 16px;
+  display: block;
+  margin: auto;
+  width: 100%;
+  border-radius: var(--radius-shadow-box);
+  box-shadow: var(--shadow-1);
+}
+
+.box_pilares p {
+  line-height: 1.3;
+}
+
+.pilares-info__img {
+  margin-right: 10px;
+  width: 100%;
+}
+
+@media screen and (min-width: 767px) {
+  .pilares-info__img {
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .pilares-box__text {
+    width: 50%;
+  }
+
+  .box_pilares {
+    padding: 32px 24px;
+    width: 80%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .box_pilares {
+    padding: 40px 24px;
+    width: 70%;
+  }
+}
+
+/* ---- Certificados ---- */
+
+.shadow-box-only-mobile {
+  border-radius: var(--radius-shadow-box);
+  box-shadow: var(--shadow-1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 576px) {
+  .shadow-box-only-mobile {
+    max-width: 520px;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .shadow-box-only-mobile {
+    border-radius: initial;
+    box-shadow: initial;
+    max-width: initial;
+    margin: initial;
+  }
+}
+
+/* ---- ebook cta ---- */
+
+.bg-ebook__cta {
+  background: linear-gradient(to bottom, #dae5fa 0%, #fff 80%);
+}
+
+.box-ebook__parrafo {
+  width: 80%;
+  margin-top: 15px !important;
+  display: block;
+  margin: 0px auto;
+}
+
+@media screen and (min-width: 767px) {
+  .box-ebook__parrafo {
+    width: 70%;
+  }
+
+  .box-ebook__parrafo {
+    width: 100%;
+    margin-left: 0px !important;
+  }
+}
+
+/* ---- Tab Soluciones ---- */
+
+@media only screen and (min-width: 820px) {
+  .solutions .shadow-box-fluid .tab-solutions__buttons {
+    justify-content: center !important;
+  }
+}
+
+.tab-solutions__buttons {
+  overflow: auto;
+}
+
+.tab-solutions__buttons .btn.selected {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 1200px) {
+  .tab-solutions__buttons .btn {
+    min-width: 200px;
+    padding-top: .75rem;
+    padding-bottom: .75rem;
+  }
+}
+
+.general-list {
+  position: relative;
+}
+
+.general-list li {
+  padding-left: 2rem;
+}
+
+.general-list li a {
+  color: var(--color-primary);
+  font-size: 1.063rem;
+  font-weight: bolder;
+}
+
+.general-list li:not(:last-of-type) {
+  margin-bottom: .75rem;
+}
+
+.general-list li::after {
+  content: url(https://www.buk.cl/hubfs/2022/BUK/Home%20nuevo/check-soluciones.svg);
+  width: 25px;
+  position: absolute;
+  left: 0;
+  transform: translateY(-1px);
+}
+
+.tab-solutions__content h3 {
+  margin-bottom: 1rem;
+}
+
+@media only screen and (min-width: 1100px) {
+  .tab-solutions__body {
+    min-height: 347px;
+  }
+}
+
+[data-solution-content] {
+  display: none;
+}
+
+.content-active[data-solution-content] {
+  display: block;
+  animation: showTarget .9s ease-in;
+}
+
+@keyframes showTarget {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+    ;
+  }
+}
+
+/* Testimonios Estáticos */
+
+.container__item {
+  width: 21.5rem;
+  min-height: 25rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.container__item>img {
+  margin-top: -5rem;
+}
+
+.container__item--content figure {
+  max-width: 160px;
+  margin: auto;
+}
